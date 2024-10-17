@@ -4,7 +4,7 @@ type tableName struct {
 	tableName string
 }
 
-type insertBuilder struct {
+type InsertBuilder struct {
 	tableName
 	columns []string
 	values []any
