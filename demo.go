@@ -29,6 +29,7 @@ type UpdateBuilder struct {
 }
 
 type DeleteBuilder struct {
+	tableName string
 	whereBuilder
 }
 
