@@ -31,3 +31,8 @@ type UpdateBuilder struct {
 type DeleteBuilder struct {
 	whereBuilder
 }
+
+type QueryBuilder struct {
+	builder
+	whereBuilder
+}
