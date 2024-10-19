@@ -5,7 +5,7 @@ type Column struct {
 	value any
 }
 
-func (c Column) Equal(v any) ColumnOp struct {
+func (c Column) Equal(v any) ColumnOp {
 	co := ColumnOp{
 		Column:Column{name:c.name,value:v},
 		op:Eq,
