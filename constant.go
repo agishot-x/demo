@@ -13,3 +13,17 @@ const (
   In
   NotIn
 )
+
+func (c CompareType) Bytes() {
+  return [...][]byte{
+    []byte{'='},
+    []byte{'>'},
+    []byte{'>','='},
+    []byte{'<'},
+    []byte{'<','='},
+    []byte{'I','S',' ','N','U','L','L'},
+    []byte{'I','S',' ','N','O','T',' ','N','U','L','L'},
+    []byte{'I','N'},
+    []byte{'N','O','T',' ','I','N'},
+  }[c]
+}
