@@ -18,7 +18,7 @@ const (
 func (c CompareType) Bytes() {
   return [...][]byte{
     []byte{'='},
-    []byte{'<>'},
+    []byte{'<','>'},
     []byte{'>'},
     []byte{'>','='},
     []byte{'<'},
