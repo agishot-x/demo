@@ -5,6 +5,14 @@ type Column struct {
 	value any
 }
 
+func (c Column) Equal(v any) ColumnOp struct {
+	co := ColumnOp{
+		Column:Column{name:c.name,value:v},
+		op:Eq,
+	}
+	return c
+}
+
 type ColumnOp struct {
 	Column
 	op CompareType
