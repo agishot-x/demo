@@ -3,7 +3,8 @@ package demo
 type CompareType int
 
 const (
-  Eq CompareType = iota
+  EQ CompareType = iota
+  NE
   GT
   GE
   LT
@@ -17,6 +18,7 @@ const (
 func (c CompareType) Bytes() {
   return [...][]byte{
     []byte{'='},
+    []byte{'<>'},
     []byte{'>'},
     []byte{'>','='},
     []byte{'<'},
