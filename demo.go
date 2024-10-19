@@ -15,6 +15,10 @@ type builder struct {
 	columns []Column
 }
 
+func (b builder) Size() int {
+	return len(b.columns)
+}
+
 type whereBuilder struct {
 	where []ColumnOp
 }
