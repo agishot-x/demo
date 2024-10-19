@@ -7,7 +7,7 @@ type Column struct {
 
 type ColumnOp struct {
 	Column
-	op string
+	op CompareType
 }
 
 type builder struct {
