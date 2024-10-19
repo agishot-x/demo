@@ -10,7 +10,7 @@ func (c Column) Equal(v any) ColumnOp struct {
 		Column:Column{name:c.name,value:v},
 		op:Eq,
 	}
-	return c
+	return co
 }
 
 type ColumnOp struct {
