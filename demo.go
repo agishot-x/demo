@@ -8,7 +8,7 @@ type Column struct {
 func (c Column) Equal(v any) ColumnOp {
 	co := ColumnOp{
 		Column:Column{name:c.name,value:v},
-		op:Eq,
+		op:EQ,
 	}
 	return co
 }
